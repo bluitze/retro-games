@@ -1,4 +1,5 @@
 import type { GameDefinition } from "../app/types";
+import { AlienWaveDefenderGame } from "./alien-wave-defender/AlienWaveDefenderGame";
 import { FallingInThePitGame } from "./falling-in-the-pit/FallingInThePitGame";
 import { FlyingRockShooterGame } from "./flying-rock-shooter/FlyingRockShooterGame";
 import { LightCycleGame } from "./light-cycle/LightCycleGame";
@@ -41,6 +42,16 @@ export const games: GameDefinition[] = [
     controls: "Click or tap aim. 1-3 select base. P pause. R restart.",
     accent: "#ff6f91",
     Component: MissleShooterGame,
+  },
+  {
+    slug: "alien-wave-defender",
+    title: "Alien Wave Defender",
+    shortTitle: "Aliens",
+    description:
+      "Defend your base from descending alien waves, dodge plasma fire, and survive behind crumbling shields.",
+    controls: "Move: \u2190/\u2192 or A/D. Fire: Space. Restart: Enter after game over.",
+    accent: "#9cff6e",
+    Component: AlienWaveDefenderGame,
   },
   {
     slug: "falling-in-the-pit",

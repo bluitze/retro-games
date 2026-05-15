@@ -1,11 +1,12 @@
 # Retro Games Arcade
 
-A single Vercel-ready Vite + React + TypeScript app bundling five local retro browser games:
+A single Vercel-ready Vite + React + TypeScript app bundling six local retro browser games:
 
 - Light Cycle Arena
 - Space Rock Shooter
 - Bug Shooter
 - Missile Shooter
+- Alien Wave Defender
 - Pit Jumper
 
 Each game is migrated natively into `src/games/<slug>` and launched from a shared arcade menu. The active game is unmounted when returning to the menu so animation frames, inputs, timers, and listeners are cleaned up.
@@ -50,6 +51,7 @@ src/
     light-cycle/
     long-bug-shooter/
     missle-shooter/
+    alien-wave-defender/
     gameRegistry.ts
   shared/
     GameShell.tsx
@@ -64,3 +66,9 @@ src/
 - `GameShell` provides the consistent Return to Menu control.
 - The `missle-shooter` folder keeps its original slug spelling, while the UI displays `Missile Shooter`.
 - No iframe wrappers are used.
+
+## Alien Wave Defender Controls
+
+- Move: left/right arrow keys or A/D
+- Fire: Space
+- Restart after game over: Enter or the on-screen Restart button
