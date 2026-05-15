@@ -10,7 +10,7 @@ export function MainMenu({ games, onSelectGame }: MainMenuProps) {
   return (
     <main className="arcade-menu" aria-labelledby="arcade-title">
       <section className="menu-hero">
-        <p className="menu-kicker">five games / one cabinet</p>
+        <p className="menu-kicker">six games / one cabinet</p>
         <h1 id="arcade-title">Retro Games Arcade</h1>
         <p className="menu-copy">
           Pick a cabinet slot, drop into the game, and return here anytime without leaving the app.
