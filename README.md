@@ -1,6 +1,6 @@
 # Retro Games Arcade
 
-A single Vercel-ready Vite + React + TypeScript app bundling eleven local retro browser games:
+A single Vercel-ready Vite + React + TypeScript app bundling twelve local retro browser games:
 
 - Light Cycle Arena
 - Space Rock Shooter
@@ -13,6 +13,7 @@ A single Vercel-ready Vite + React + TypeScript app bundling eleven local retro 
 - Shield Wing
 - River Patrol
 - Bucket Bomber
+- Brick Wall Breaker
 
 Each game is migrated natively into `src/games/<slug>` and launched from a shared arcade menu. The active game is unmounted when returning to the menu so animation frames, inputs, timers, and listeners are cleaned up.
 
@@ -62,6 +63,7 @@ src/
     shield-wing/
     river-patrol/
     bucket-bomber/
+    brick-wall-breaker/
     gameRegistry.ts
   shared/
     GameShell.tsx
@@ -117,5 +119,12 @@ src/
 
 - Move: pointer, touch, left/right arrow keys, or A/D
 - Start/restart: Enter, Space, or click/tap
+- Pause: P
+- Mute: M or the on-screen Mute button
+
+## Brick Wall Breaker Controls
+
+- Move: pointer, touch, left/right arrow keys, or A/D
+- Serve/start/restart: Enter, Space, or click/tap
 - Pause: P
 - Mute: M or the on-screen Mute button

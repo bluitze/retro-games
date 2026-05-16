@@ -11,7 +11,8 @@ export type GameSlug =
   | "pyramid-hopper"
   | "shield-wing"
   | "river-patrol"
-  | "bucket-bomber";
+  | "bucket-bomber"
+  | "brick-wall-breaker";
 
 export type GameDefinition = {
   slug: GameSlug;

@@ -1,5 +1,6 @@
 import type { GameDefinition } from "../app/types";
 import { AlienWaveDefenderGame } from "./alien-wave-defender/AlienWaveDefenderGame";
+import { BrickWallBreakerGame } from "./brick-wall-breaker/BrickWallBreakerGame";
 import { BucketBomberGame } from "./bucket-bomber/BucketBomberGame";
 import { FallingInThePitGame } from "./falling-in-the-pit/FallingInThePitGame";
 import { FlyingRockShooterGame } from "./flying-rock-shooter/FlyingRockShooterGame";
@@ -111,5 +112,14 @@ export const games: GameDefinition[] = [
     controls: "Pointer/touch moves bucket. Arrows or A/D fallback. Enter/Space start. P pause. R restart. M mute.",
     accent: "#ffe761",
     Component: BucketBomberGame,
+  },
+  {
+    slug: "brick-wall-breaker",
+    title: "Brick Wall Breaker",
+    shortTitle: "Bricks",
+    description: "Serve a single ball into two bright brick walls before your three turns run out.",
+    controls: "Arrows or A/D move. Pointer/touch moves paddle. Enter/Space serve/start/restart. P pause. M mute.",
+    accent: "#f7d94a",
+    Component: BrickWallBreakerGame,
   },
 ];
