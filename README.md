@@ -1,6 +1,6 @@
 # Retro Games Arcade
 
-A single Vercel-ready Vite + React + TypeScript app bundling eight local retro browser games:
+A single Vercel-ready Vite + React + TypeScript app bundling nine local retro browser games:
 
 - Light Cycle Arena
 - Space Rock Shooter
@@ -9,6 +9,7 @@ A single Vercel-ready Vite + React + TypeScript app bundling eight local retro b
 - Alien Wave Defender
 - Pit Jumper
 - Pond Jumper
+- Pyramid Hopper
 - Shield Wing
 
 Each game is migrated natively into `src/games/<slug>` and launched from a shared arcade menu. The active game is unmounted when returning to the menu so animation frames, inputs, timers, and listeners are cleaned up.
@@ -55,6 +56,7 @@ src/
     missle-shooter/
     alien-wave-defender/
     pond-jumper/
+    pyramid-hopper/
     shield-wing/
     gameRegistry.ts
   shared/
@@ -82,6 +84,13 @@ src/
 - Move: arrow keys or WASD
 - Start: Enter or the on-screen Start button
 - Pause: Space or the on-screen Pause button
+- Restart: R or the on-screen Restart button
+
+## Pyramid Hopper Controls
+
+- Move diagonally: ArrowUp/W up-left, ArrowRight/D up-right, ArrowLeft/A down-left, ArrowDown/S down-right
+- Start: Enter or the on-screen Start button
+- Pause: Space, P, or the on-screen Pause button
 - Restart: R or the on-screen Restart button
 
 ## Shield Wing Controls
