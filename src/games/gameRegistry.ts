@@ -7,6 +7,7 @@ import { LongBugShooterGame } from "./long-bug-shooter/LongBugShooterGame";
 import { MissleShooterGame } from "./missle-shooter/MissleShooterGame";
 import { PondJumperGame } from "./pond-jumper/PondJumperGame";
 import { PyramidHopperGame } from "./pyramid-hopper/PyramidHopperGame";
+import { RiverPatrolGame } from "./river-patrol/RiverPatrolGame";
 import { ShieldWingGame } from "./shield-wing/ShieldWingGame";
 
 export const games: GameDefinition[] = [
@@ -91,5 +92,14 @@ export const games: GameDefinition[] = [
     controls: "Arrows or WASD move. Space fire. Enter or Shift cannon. R restart.",
     accent: "#67e8f9",
     Component: ShieldWingGame,
+  },
+  {
+    slug: "river-patrol",
+    title: "River Patrol",
+    shortTitle: "River",
+    description: "Throttle through a shifting river canyon, refuel mid-flight, and crack checkpoint bridges.",
+    controls: "Arrows or WASD steer/throttle. Space fire. P pause. R restart. M mute.",
+    accent: "#39ff88",
+    Component: RiverPatrolGame,
   },
 ];

@@ -1,0 +1,35 @@
+.river-patrol {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  place-items: center;
+  padding: 12px;
+  background:
+    linear-gradient(180deg, rgba(57, 255, 136, 0.08), transparent 38%),
+    #07111c;
+}
+
+.river-patrol__canvas {
+  width: min(100%, calc((100vh - 174px) * 4 / 5));
+  max-height: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border: 2px solid #6ee7ff;
+  background: #123d9b;
+  box-shadow:
+    0 0 0 8px #101824,
+    0 0 32px rgba(57, 255, 136, 0.18);
+}
+
+@media (max-width: 700px) {
+  .river-patrol {
+    padding: 8px;
+  }
+
+  .river-patrol__canvas {
+    width: min(100%, calc((100vh - 210px) * 4 / 5));
+  }
+}
