@@ -5,6 +5,7 @@ import { FlyingRockShooterGame } from "./flying-rock-shooter/FlyingRockShooterGa
 import { LightCycleGame } from "./light-cycle/LightCycleGame";
 import { LongBugShooterGame } from "./long-bug-shooter/LongBugShooterGame";
 import { MissleShooterGame } from "./missle-shooter/MissleShooterGame";
+import { PondJumperGame } from "./pond-jumper/PondJumperGame";
 
 export const games: GameDefinition[] = [
   {
@@ -61,5 +62,14 @@ export const games: GameDefinition[] = [
     controls: "Arrows or WASD move/climb. Space jump. Enter start. Escape pause.",
     accent: "#f7a24a",
     Component: FallingInThePitGame,
+  },
+  {
+    slug: "pond-jumper",
+    title: "Pond Jumper",
+    shortTitle: "Pond",
+    description: "Hop through traffic, ride floating platforms, and claim every open cove.",
+    controls: "Arrows or WASD hop. Enter start. Space pause. R restart.",
+    accent: "#b8f36e",
+    Component: PondJumperGame,
   },
 ];
