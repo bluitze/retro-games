@@ -52,6 +52,25 @@ button {
   margin: 0 auto clamp(24px, 4vw, 44px);
 }
 
+.menu-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.menu-logo {
+  width: clamp(56px, 9vw, 82px);
+  height: clamp(56px, 9vw, 82px);
+  flex: 0 0 auto;
+  border: 1px solid rgba(103, 232, 249, 0.48);
+  border-radius: 8px;
+  background: #05070d;
+  box-shadow:
+    0 0 20px rgba(103, 232, 249, 0.24),
+    0 0 34px rgba(184, 243, 110, 0.16);
+}
+
 .menu-kicker {
   margin: 0 0 10px;
   color: #67e8f9;
@@ -59,6 +78,10 @@ button {
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.menu-brand .menu-kicker {
+  margin: 0;
 }
 
 .menu-hero h1,
