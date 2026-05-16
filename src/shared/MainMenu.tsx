@@ -12,7 +12,7 @@ export function MainMenu({ games, onSelectGame }: MainMenuProps) {
       <section className="menu-hero">
         <div className="menu-brand">
           <img src="/favicon.png" alt="Retro Games Arcade logo" className="menu-logo" />
-          <p className="menu-kicker">ten games / one cabinet</p>
+          <p className="menu-kicker">eleven games / one cabinet</p>
         </div>
         <h1 id="arcade-title">Retro Games Arcade</h1>
         <p className="menu-copy">

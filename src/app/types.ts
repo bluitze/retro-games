@@ -10,7 +10,8 @@ export type GameSlug =
   | "pond-jumper"
   | "pyramid-hopper"
   | "shield-wing"
-  | "river-patrol";
+  | "river-patrol"
+  | "bucket-bomber";
 
 export type GameDefinition = {
   slug: GameSlug;

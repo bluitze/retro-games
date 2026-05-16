@@ -1,5 +1,6 @@
 import type { GameDefinition } from "../app/types";
 import { AlienWaveDefenderGame } from "./alien-wave-defender/AlienWaveDefenderGame";
+import { BucketBomberGame } from "./bucket-bomber/BucketBomberGame";
 import { FallingInThePitGame } from "./falling-in-the-pit/FallingInThePitGame";
 import { FlyingRockShooterGame } from "./flying-rock-shooter/FlyingRockShooterGame";
 import { LightCycleGame } from "./light-cycle/LightCycleGame";
@@ -101,5 +102,14 @@ export const games: GameDefinition[] = [
     controls: "Arrows or WASD steer/throttle. Space fire. P pause. R restart. M mute.",
     accent: "#39ff88",
     Component: RiverPatrolGame,
+  },
+  {
+    slug: "bucket-bomber",
+    title: "Bucket Bomber",
+    shortTitle: "Buckets",
+    description: "Catch falling bombs with your bucket stack before they hit the ground.",
+    controls: "Pointer/touch moves bucket. Arrows or A/D fallback. Enter/Space start. P pause. R restart. M mute.",
+    accent: "#ffe761",
+    Component: BucketBomberGame,
   },
 ];
