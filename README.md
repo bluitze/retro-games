@@ -1,6 +1,6 @@
 # Retro Games Arcade
 
-A single Vercel-ready Vite + React + TypeScript app bundling nine local retro browser games:
+A single Vercel-ready Vite + React + TypeScript app bundling ten local retro browser games:
 
 - Light Cycle Arena
 - Space Rock Shooter
@@ -11,6 +11,7 @@ A single Vercel-ready Vite + React + TypeScript app bundling nine local retro br
 - Pond Jumper
 - Pyramid Hopper
 - Shield Wing
+- River Patrol
 
 Each game is migrated natively into `src/games/<slug>` and launched from a shared arcade menu. The active game is unmounted when returning to the menu so animation frames, inputs, timers, and listeners are cleaned up.
 
@@ -58,6 +59,7 @@ src/
     pond-jumper/
     pyramid-hopper/
     shield-wing/
+    river-patrol/
     gameRegistry.ts
   shared/
     GameShell.tsx
@@ -99,3 +101,12 @@ src/
 - Fire: Space, except inside the neutral zone
 - Cannon: Enter or Shift when charged
 - Restart after game over: R or the on-screen Restart button
+
+## River Patrol Controls
+
+- Steer: left/right arrow keys or A/D
+- Throttle: up/down arrow keys or W/S
+- Fire: Space
+- Pause: P
+- Restart: R
+- Mute: M
