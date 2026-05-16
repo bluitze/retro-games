@@ -6,6 +6,7 @@ import { LightCycleGame } from "./light-cycle/LightCycleGame";
 import { LongBugShooterGame } from "./long-bug-shooter/LongBugShooterGame";
 import { MissleShooterGame } from "./missle-shooter/MissleShooterGame";
 import { PondJumperGame } from "./pond-jumper/PondJumperGame";
+import { ShieldWingGame } from "./shield-wing/ShieldWingGame";
 
 export const games: GameDefinition[] = [
   {
@@ -71,5 +72,14 @@ export const games: GameDefinition[] = [
     controls: "Arrows or WASD hop. Enter start. Space pause. R restart.",
     accent: "#b8f36e",
     Component: PondJumperGame,
+  },
+  {
+    slug: "shield-wing",
+    title: "Shield Wing",
+    shortTitle: "Wing",
+    description: "Bite through fortress shields, shelter in the neutral zone, and line up the charged cannon.",
+    controls: "Arrows or WASD move. Space fire. Enter or Shift cannon. R restart.",
+    accent: "#67e8f9",
+    Component: ShieldWingGame,
   },
 ];

@@ -1,0 +1,106 @@
+.shield-wing {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 50%, rgba(255, 111, 145, 0.18), transparent 28%),
+    linear-gradient(120deg, rgba(103, 232, 249, 0.09), transparent 34%),
+    #05070d;
+}
+
+.shield-wing__canvas {
+  width: min(100%, calc((100vh - 180px) * 8 / 5));
+  max-height: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border: 1px solid rgba(103, 232, 249, 0.36);
+  box-shadow:
+    0 0 0 8px rgba(10, 18, 30, 0.86),
+    0 0 44px rgba(103, 232, 249, 0.16);
+}
+
+.shield-wing__panel {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display: none;
+  justify-content: center;
+  gap: 10px;
+  color: #d9f8ff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.shield-wing__panel span {
+  padding: 4px 7px;
+  border: 1px solid rgba(103, 232, 249, 0.28);
+  background: rgba(5, 7, 13, 0.72);
+}
+
+.shield-wing__status {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 14px;
+  display: none;
+  margin: 0;
+  color: #fff7d6;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-align: center;
+  pointer-events: none;
+}
+
+.shield-wing__restart {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(52px, 10vh, 88px);
+  min-width: 150px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  color: #081016;
+  background: #f8d66d;
+  box-shadow: 0 0 22px rgba(248, 214, 109, 0.42);
+  cursor: pointer;
+  font-weight: 900;
+  transform: translateX(-50%);
+}
+
+.shield-wing__restart:hover,
+.shield-wing__restart:focus-visible {
+  filter: brightness(1.08);
+  outline: 3px solid rgba(255, 255, 255, 0.42);
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .shield-wing {
+    align-content: center;
+    padding: 44px 8px 42px;
+  }
+
+  .shield-wing__canvas {
+    width: 100%;
+  }
+
+  .shield-wing__panel {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .shield-wing__status {
+    display: block;
+  }
+}
