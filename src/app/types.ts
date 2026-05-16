@@ -7,7 +7,8 @@ export type GameSlug =
   | "missle-shooter"
   | "falling-in-the-pit"
   | "alien-wave-defender"
-  | "pond-jumper";
+  | "pond-jumper"
+  | "shield-wing";
 
 export type GameDefinition = {
   slug: GameSlug;
