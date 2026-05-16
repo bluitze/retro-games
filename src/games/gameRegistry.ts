@@ -6,6 +6,7 @@ import { LightCycleGame } from "./light-cycle/LightCycleGame";
 import { LongBugShooterGame } from "./long-bug-shooter/LongBugShooterGame";
 import { MissleShooterGame } from "./missle-shooter/MissleShooterGame";
 import { PondJumperGame } from "./pond-jumper/PondJumperGame";
+import { PyramidHopperGame } from "./pyramid-hopper/PyramidHopperGame";
 import { ShieldWingGame } from "./shield-wing/ShieldWingGame";
 
 export const games: GameDefinition[] = [
@@ -72,6 +73,15 @@ export const games: GameDefinition[] = [
     controls: "Arrows or WASD hop. Enter start. Space pause. R restart.",
     accent: "#b8f36e",
     Component: PondJumperGame,
+  },
+  {
+    slug: "pyramid-hopper",
+    title: "Pyramid Hopper",
+    shortTitle: "Pyramid",
+    description: "Hop across a cube pyramid, flip every tile, dodge hazards, and ride escape discs.",
+    controls: "Diagonal arrows or WASD hop. Enter start. Space/P pause. R restart.",
+    accent: "#ffd95f",
+    Component: PyramidHopperGame,
   },
   {
     slug: "shield-wing",
